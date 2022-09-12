@@ -6,7 +6,7 @@
 /*   By: melkholy <melkholy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 13:51:56 by melkholy          #+#    #+#             */
-/*   Updated: 2022/08/26 03:04:24 by melkholy         ###   ########.fr       */
+/*   Updated: 2022/09/12 20:22:34 by melkholy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int	ft_printf(const char *fmt, ...)
 	if (!fmt)
 	{
 		ft_putstr_fd("(null)", 1);
-		return (24);
+		return (6);
 	}
 	if (!ft_strchr(fmt, '%'))
 	{
