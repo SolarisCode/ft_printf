@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   string_and_char.c                                  :+:      :+:    :+:   */
+/*   string_and_char_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: melkholy <melkholy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 09:47:33 by melkholy          #+#    #+#             */
-/*   Updated: 2022/08/29 02:52:19 by melkholy         ###   ########.fr       */
+/*   Updated: 2022/08/27 18:17:26 by melkholy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_printf_bonus.h"
 #include "libft/libft.h"
 
 void	ft_format_s(t_print *buff, char *str, int len)
@@ -41,8 +41,6 @@ void	ft_format_s(t_print *buff, char *str, int len)
 
 void	ft_width_and_s(t_print *buff, char *str, int len)
 {
-	if (buff->s_null && buff->pres < len)
-		buff->pres = 0;
 	if ((buff->pres > buff->width && buff->pres > len) || buff->pres > len)
 		buff->pres = len;
 	ft_stralloc(buff, NULL);
@@ -55,7 +53,7 @@ void	ft_pres_and_s(t_print *buff, char *str, int len)
 {
 	if (buff->s_pres && buff->pres < len)
 	{
-		if (buff->pres == 0 || buff->s_null)
+		if (buff->pres == 0)
 			return ;
 		ft_stralloc(buff, NULL);
 		buff->count = -1;

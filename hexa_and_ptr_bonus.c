@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   hexa_and_ptr.c                                     :+:      :+:    :+:   */
+/*   hexa_and_ptr_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: melkholy <melkholy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 10:00:00 by melkholy          #+#    #+#             */
-/*   Updated: 2022/08/29 02:55:23 by melkholy         ###   ########.fr       */
+/*   Updated: 2022/08/27 08:00:11 by melkholy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_printf_bonus.h"
 
 int	ft_ncount_hex(size_t n)
 {
@@ -64,7 +64,7 @@ void	ft_pointer(t_print *buff, size_t nbr)
 
 	if (nbr == 0)
 	{
-		ft_string(buff, "(nil)");
+		ft_string(buff, "0x0");
 		return ;
 	}
 	buff->speci = 'p';
