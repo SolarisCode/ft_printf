@@ -1,6 +1,6 @@
 # ft_printf
 
-The first function ever to use in C printf() from the standard input/output library,
+The first function ever to be used in C printf() from the standard input/output library,
 I have decided to created my own ft_printf() library as I was very curious how it works
 and I wanted to get a better understanding of the variadic function concept and how to use its macros.
 I have implemented all of these specifiers `cspdiuxX%` in addition to any combination
