@@ -64,4 +64,4 @@ The pervious command will result in the static library file `libftprintf.a` and 
 ```shell
 gcc main.c -L"the directory that has the library" -I"the directory that has the include file" -lprintf
 ```
-Feel free to contact me if you an better way to implement any of the specifiers or the flags :)
+Feel free to contact me if you have a better way to implement any of the specifiers or the flags :)
